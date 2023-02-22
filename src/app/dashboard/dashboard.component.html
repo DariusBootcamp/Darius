@@ -1,0 +1,40 @@
+<!-- topnavbar -->
+<div class="topnav shadow p-1">
+  <a style="color:aquamarine">Admin Dashboard</a>
+  <span class="menu" (click)="openNav(true)"><i class="bi bi-list"></i></span>
+</div>
+<!-- topnavbar -->
+
+<!-- left sidebar nav  -->
+
+<!-- <mat-grid-list cols="3" rowHeight="261px" gutterSize="15px">
+  <mat-grid-tile [colspan]="2" [rowspan]="1" style="background-color:#142A5C;">
+    <div  class="padding-main">one</div>
+  </mat-grid-tile>
+
+  <mat-grid-tile [colspan]="1" [rowspan]="2" style="background-color:#B7A0E8;">
+    <div  class="padding-main">one</div>
+  </mat-grid-tile>
+
+
+</mat-grid-list> -->
+
+<div  class="sidebar shadow p-2"  id="sidebar"  [ngStyle]="responsiveMenu">
+  <ul>
+      <li><a routerLink="/home"><i class="bi bi-speedometer2"></i> </a> <span class="tooltip">Dashboard</span> </li>
+      <li><a routerLink="/products"><i class="bi bi-card-text"></i> </a> <span class="tooltip">Products</span></li>
+      <li><a routerLink="/users"><i class="bi bi-person-gear"></i> </a> <span class="tooltip">Users</span></li>
+      <li><a routerLink="/home"><i class="bi bi-box-arrow-left"></i></a> <span class="tooltip">Logout</span></li>
+
+  </ul>
+</div>
+<!-- left sidebar nav  -->
+
+
+<!-- main content  -->
+
+<div class="main-content" [ngStyle]="responsiveContent">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- main content  -->
