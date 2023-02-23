@@ -33,7 +33,7 @@
 
 .sidebar {
   position: fixed;
-  top: 63px;
+  top: 57px;
   /* overflow: auto; */
   background-color: #11101D;
   height: 100%;
@@ -45,14 +45,31 @@
 
 .sidebar a {
   text-decoration: none;
-  padding: 10px 10px;
+  padding: 10px 5px;
   color: #fff;
-  text-align: left;
-  display: block;
+  text-align: center;
+  /* display: block; */
+  display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.sidebar a i:hover {
+  background: #FFF;
+  color: #11101d;
 }
 
 .sidebar i {
-  padding-right: 10px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  background-color: #1d1b31;
+  border-radius: 12px;
+  /* width: 100%; */
 }
 
 .sidebar .icon {
@@ -86,16 +103,18 @@
 
 .sidebar li:hover .tooltip{
   opacity: 1;
+  overflow: hidden;
   pointer-events: auto;
   transition: all 0.4s ease;
   top: 50%;
   transform: translateY(-50%);
+  color: #000;
 }
 
 
 /* tooltip  */
 
-.dropdow-container{
+/* .dropdow-container{
   padding-left: 10px;
   overflow-y: hidden;
   max-height: 0px;
@@ -105,7 +124,7 @@
 .dropdow-container.show{
   max-height: 1000px;
   transition: all .15 ease;
-}
+} */
 ul{
   padding: 0px;
 }
@@ -117,13 +136,13 @@ ul>li>a.active{
 
 /* main-content */
 .main-content {
-  margin-left:90px;
-  margin-top: 100px;
+  margin-left:80px;
+  margin-top: 55px;
   padding: 10px 18px;
   transition: margin-left .5s;
   /* width: 100%; */
   height: 100%;
-  background-color: aquamarine;
+  background-color: #fff;
 }
 /* main-content */
 
@@ -137,7 +156,7 @@ ul>li>a.active{
   }
   .sidebar{
       display: none;
-      width: 160px;
+      width: 78px;
   }
   .sidebar a{
       padding: 10px 0px;

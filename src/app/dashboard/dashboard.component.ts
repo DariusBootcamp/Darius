@@ -26,7 +26,7 @@ export class DashboardComponent {
         'color' :'#fff'
       }
       this.responsiveContent={
-        'margin-left':'150px'
+        'margin-left':'80px'
       }
       this.defaultStatus = false;
     }else
